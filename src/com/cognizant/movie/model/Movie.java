@@ -136,8 +136,8 @@ public class Movie {
     @Override
     public String toString() {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
-        return String.format("%-10s%-20s%-15s%-10s%-18s%-23s%-35s\n", movieId, title, boxOffice,
-                active == true ? "Yes" : "No", sdf.format(dateOfLaunch), genre,
+        return String.format("%-10s%-20s%-15s%-10s%-18s%-23s%-35s\n", movieId, title,
+                "$" + boxOffice, active == true ? "Yes" : "No", sdf.format(dateOfLaunch), genre,
                 hasTeaser == true ? "Yes" : "No");
     }
 

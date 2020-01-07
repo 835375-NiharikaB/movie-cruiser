@@ -26,11 +26,11 @@ public class FavoriteDaoCollectionImplTest {
     public static void testGetAllFavorites() {
         try {
             System.out.println("Retrieving all the items from favorites");
-            List<Movie> list = favoriteDao.getAllFavorites(2).getFavoriteList(); // 1 is userId
+            List<Movie> list = favoriteDao.getAllFavorites(1).getFavoriteList(); // 1 is userId
             for (Movie movie : list) {
                 System.out.println(movie);
             }
-            System.out.println("No.of Favorites:" + list.size());
+            System.out.println("No.of Favorites:" + favoriteDao.getAllFavorites(1).getTotal());
         } catch (FavoriteEmptyException e) {
             System.out.println(e);
         }
