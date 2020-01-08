@@ -45,7 +45,7 @@ public class MovieDaoCollectionImplTest {
     public static void testGetmodifyMovieList() {
         System.out.println("Edit Movie");
         Movie movielist = new Movie(1, "Watch and Enjoy", 1234567890L, true,
-                DateUtil.convertToDate("03/01/2019"), "Comedy", false);
+                DateUtil.convertToDate("03/01/2019"), "Action Thriller", false);
         moviedao.modifyMovieList(movielist);
 
     }
