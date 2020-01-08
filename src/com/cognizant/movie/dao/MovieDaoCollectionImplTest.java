@@ -21,7 +21,7 @@ public class MovieDaoCollectionImplTest {
         System.out.println("Admin View");
         MovieDao moviedao = new MovieDaoCollectionImpl();
         List<Movie> movie = moviedao.getMovieListAdmin();
-        System.out.printf("%-10s%-20s%-23s%-10s%-18s%-23s%-35s\n", "Id", "Title", "Box Office",
+        System.out.printf("%-10s%-24s%-18s%-10s%-19s%-20s%-35s\n", "Id", "Title", "Box Office",
                 "Active", "Date Of Launch", "Genre", "Has Teaser");
         for (Movie movies : movie) {
             System.out.println(movies);// invokes toString();
@@ -33,7 +33,7 @@ public class MovieDaoCollectionImplTest {
     public static void testGetMovieListCustomer() {
         System.out.println("Customer View");
         List<Movie> movie = moviedao.getMovieListCustomer();
-        System.out.printf("%-10s%-20s%-23s%-10s%-18s%-23s%-30s\n", "Id", "Title", "Box Office",
+        System.out.printf("%-10s%-24s%-18s%-10s%-19s%-20s%-30s\n", "Id", "Title", "Box Office",
                 "Active", "Date Of Launch", "Genre", "Has Teaser");
         for (Movie movies2 : movie) {
             System.out.println(movies2);
@@ -52,7 +52,7 @@ public class MovieDaoCollectionImplTest {
 
     public static void testGetMovie() {
         System.out.println("Get Movies");
-        System.out.printf("%-10s%-20s%-23s%-10s%-18s%-23s%-30s\n", "Id", "Title", "Box Office",
+        System.out.printf("%-10s%-24s%-18s%-10s%-19s%-20s%-30s\n", "Id", "Title", "Box Office",
                 "Active", "Date of Launch", "Genre", "Has Teaser");
         Movie movie = moviedao.getMovieById(3);
         System.out.println(movie);// invokes toString()

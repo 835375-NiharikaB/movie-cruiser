@@ -138,7 +138,7 @@ public class Movie {
     public String toString() {
         DecimalFormat df = new DecimalFormat();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
-        return String.format("%-10s%-20s%-23s%-10s%-18s%-23s%-35s\n", movieId, title,
+        return String.format("%-10s%-20s%-23s%-10s%-17s%-25s%-30s\n", movieId, title,
                 "$" + df.format(boxOffice), active == true ? "Yes" : "No", sdf.format(dateOfLaunch),
                 genre, hasTeaser == true ? "Yes" : "No");
     }
