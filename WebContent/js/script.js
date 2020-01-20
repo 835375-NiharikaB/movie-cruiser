@@ -16,12 +16,12 @@ function validateMovieForm() {
     }
 
     if (boxOffice == "") {
-        alert("Gross is required");
+        alert("Box Office is required");
         return false;
     }
 
     if (!boxOffice.match(regex)) {
-        alert("Gross has to be a number");
+        alert("Box Office has to be a number");
         return false;
     }
 
