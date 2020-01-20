@@ -18,7 +18,7 @@
 
 
     <h1 class="movie-text">Favorites</h1>
-    <c:if test="${removeFavoriteItemStatus==true }">
+    <c:if test="${removeFavoriteStatus==true }">
         <h4 class="notification">Movie Removed From Favorites Successfully</h4>
     </c:if>
     <c:set var="favorite" value="${favorite }"></c:set>

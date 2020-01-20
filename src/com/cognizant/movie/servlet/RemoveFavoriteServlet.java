@@ -35,7 +35,7 @@ public class RemoveFavoriteServlet extends HttpServlet {
             favorite.setTotal(NoOfFavorites);
             request.setAttribute("movie", movieList);
             request.setAttribute("favorite", favorite);
-            request.setAttribute("removeFavoriteItemStatus", true);
+            request.setAttribute("removeFavoriteStatus", true);
             request.getRequestDispatcher("favorites.jsp").forward(request, response);
         } catch (FavoriteEmptyException e) {
             request.getRequestDispatcher("favorites-empty.jsp").forward(request, response);
